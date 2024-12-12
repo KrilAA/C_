@@ -14,8 +14,8 @@ namespace ConsoleApp1.task1
             int[] arr = new int[3];
             //for array arr to have correct poryadkovist
             int index = 0;
-            //my number is 8 in rating
-            int num = 8;
+            //my number is 7 in rating
+            int num = 7;
 
             for (int i = 0; i < 3; i++)
             {
