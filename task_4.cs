@@ -9,8 +9,8 @@ namespace ConsoleApp1.task4
         public void StartTask()
         {
             Random random = new Random();
-            //my number is 8 in rating
-            int numm = 8;
+            //my number is 7 in rating
+            int numm = 7;
             int size = 10 + numm;
 
             int[] arrray = new int[size];
