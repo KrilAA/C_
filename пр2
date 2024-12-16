@@ -1,0 +1,23 @@
+CREATE DATABASE library;
+USE library;
+CREATE TABLE serials (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    title VARCHAR(50)
+);
+
+
+ALTER TABLE serials ADD COLUMN year INT;
+
+INSERT INTO serials (title, year) VALUES 
+('The End of The F***ing World', 2017),
+('You', 2018),
+('The Witcher', 2019),
+('The Office', 2005),
+('Gossip girl', 2007 );
+
+SELECT * FROM serials;
+
+CREATE PROCEDURE get_odd_year_serials()
+SELECT * FROM serials WHERE year % 2 != 0;
+
+CALL get_odd_year_serials();
